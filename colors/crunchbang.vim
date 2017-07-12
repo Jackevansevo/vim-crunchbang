@@ -11,7 +11,7 @@ hi  Normal                                  ctermfg=12  ctermbg=8  guifg=#bfbfbf
 set background=dark
 
 hi  ColorColumn                             ctermbg=0  guibg=#3b4245  gui=NONE
-hi  Comment                                 ctermfg=10  guifg=#999999  gui=italic
+hi  Comment                                 ctermfg=10  guifg=#999999  gui=NONE
 hi  ConId                                   ctermfg=3  guifg=#ab9a6a  gui=NONE
 hi  Conceal                                 ctermfg=4  guifg=#75a0bd  gui=NONE
 hi  Constant                                ctermfg=6  guifg=#68a6a8  gui=NONE
@@ -61,7 +61,7 @@ hi  Todo                                    cterm=NONE  ctermfg=5  guifg=#bd8ea1
 hi  Type                                    ctermfg=3  guifg=#ab9a6a  gui=NONE
 hi  Underlined                              ctermfg=13  guifg=#a793c4  gui=NONE
 hi  VarId                                   ctermfg=4  guifg=#75a0bd  gui=NONE
-hi  VertSplit                               ctermfg=11  ctermbg=11  guifg=#acacac  guibg=#acacac  gui=NONE
+hi  VertSplit                               ctermfg=11  ctermbg=11  guifg=#999999  guibg=#2e3436  gui=NONE
 hi  Visual                                  cterm=reverse  ctermfg=10  ctermbg=8  guifg=#999999  guibg=#2e3436  gui=reverse
 hi  VisualNOS                               cterm=reverse  ctermbg=0  ctermbg=NONE  guibg=#3b4245  guifg=NONE  gui=reverse
 hi  WarningMsg                              cterm=NONE  ctermfg=9  guifg=#c48d93  gui=NONE
@@ -216,6 +216,17 @@ hi  vimHiLink                               ctermfg=4  guifg=#75a0bd  gui=NONE
 hi  vimIsCommand                            ctermfg=11  guifg=#acacac  gui=NONE
 hi  vimSynMtchOpt                           ctermfg=3  guifg=#ab9a6a  gui=NONE
 hi  vimSynType                              ctermfg=6  guifg=#68a6a8  gui=NONE
+
+
+" airblade/vim-gitgutter
+hi link GitGutterAdd    SignifySignAdd
+hi link GitGutterChange SignifySignChange
+hi link GitGutterDelete SignifySignDelete
+
+" mhinz/vim-signify
+hi SignifySignAdd                           ctermfg=2  guifg=#6fa868  gui=NONE
+hi SignifySignChange                        ctermfg=3  guifg=#ab9a6a  gui=NONE
+hi SignifySignDelete                        ctermfg=1  guifg=#c48d93  gui=NONE
 
 hi link Boolean                             Constant
 hi link Character                           Constant
